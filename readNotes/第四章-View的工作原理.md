@@ -162,3 +162,4 @@ View 有 setWillNotDraw 方法，默认情况下 View 没有启用这个标记�
 5. View 带有滑动嵌套情形时，需要处理好滑动冲突。
 
 ### 4.4.3 自定义 View 示例
+参考 [Demo](../app/src/main/java/com/l_5411/bookdemo/chapter_4)
