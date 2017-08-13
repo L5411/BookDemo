@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.l_5411.bookdemo">
+
+    <permission
+        android:name="com.l_5411.bookdemo.chapter_2.aidl.permission.ACCESS_BOOK_SERVICE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.l_5411.bookdemo.chapter_2.aidl.permission.ACCESS_BOOK_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter_2.Chapter2Activity" />
+        <activity android:name=".chapter_4.Chapter4Activity" />
+
+        <!-- chapter_2.messenger -->
+        <activity android:name=".chapter_2.messenger.MessengerActivity" />
+
+        <service
+            android:name=".chapter_2.messenger.MessengerService"
+            android:process=":remote" />
+
+        <!-- chapter_2.aidl -->
+        <service
+            android:name=".chapter_2.aidl.BookManagerService"
+            android:process=":remote" />
+
+        <activity android:name=".chapter_2.aidl.BookManagerActivity" />
+
+        <!-- chapter_2.provider -->
+        <provider
+            android:name=".chapter_2.provider.BookProvider"
+            android:authorities="com.l_5411.bookdemo.chapter_2.provider"
+            android:permission="com.l_5411.bookdemo.PROVIDER"
+            android:process=":provider" />
+
+        <activity android:name=".chapter_2.provider.ProviderActivity" />
+
+        <!-- chapter_2.socket -->
+        <service
+            android:name=".chapter_2.socket.TCPServerService"
+            android:process=":remote" />
+
+        <activity android:name=".chapter_2.socket.TCPClientActivity" />
+
+        <!-- chapter_2.binder_pool -->
+        <activity android:name=".chapter_2.binder_pool.BinderPoolActivity" />
+
+        <service
+            android:name=".chapter_2.binder_pool.BinderPoolService"
+            android:process=":remote" />
+
+        <activity android:name=".chapter_4.circle_view.CircleActivity" />
+        <activity android:name=".chapter_4.horizontal_scroll_view.HorizontalScrollActivity"></activity>
+    </application>
+
+</manifest>
