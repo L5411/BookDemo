@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="center">
-    
+    tools:context="com.l_5411.bookdemo.chapter_5.notification.NotificationActivity">
+
     <Button
-        android:id="@+id/chapter_4_circle_view"
+        android:id="@+id/default_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 4 CircleView"
+        android:text="默认通知"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_4_horizontal_scroll_view"
+        android:id="@+id/custom_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 4 HorizontalScrollView"
+        android:text="自定义通知"
         android:textAllCaps="false"/>
 
 </LinearLayout>

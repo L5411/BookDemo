@@ -26,6 +26,7 @@
         </activity>
         <activity android:name=".chapter_2.Chapter2Activity" />
         <activity android:name=".chapter_4.Chapter4Activity" />
+        <activity android:name=".chapter_5.Chapter5Activity" />
 
         <!-- chapter_2.messenger -->
         <activity android:name=".chapter_2.messenger.MessengerActivity" />
@@ -64,8 +65,33 @@
             android:name=".chapter_2.binder_pool.BinderPoolService"
             android:process=":remote" />
 
+        <!-- chapter_4.circle_view -->
         <activity android:name=".chapter_4.circle_view.CircleActivity" />
-        <activity android:name=".chapter_4.horizontal_scroll_view.HorizontalScrollActivity"></activity>
+
+        <!-- chapter_4.horizontal_scroll_view -->
+        <activity android:name=".chapter_4.horizontal_scroll_view.HorizontalScrollActivity" />
+
+        <!-- chapter_5.notification -->
+        <activity android:name=".chapter_5.notification.NotificationActivity" />
+
+        <!-- chapter_5.widget_provider -->
+        <receiver android:name=".chapter_5.widget_provider.MyAppWidgetProvider">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info" />
+
+            <intent-filter>
+                <action android:name="com.l_5411.bookdemo.chapter_5.widget_provider.action.CLICK" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- chapter_5.simulated_notification -->
+        <activity android:name=".chapter_5.simulated_notification.LocalActivity"
+            android:label="LocalActivity"/>
+        <activity android:name=".chapter_5.simulated_notification.RemoteActivity"
+            android:process=":remote"
+            android:label="RemoteActivity"/>
     </application>
 
 </manifest>

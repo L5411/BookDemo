@@ -4,19 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
-    
+
     <Button
-        android:id="@+id/chapter_4_circle_view"
+        android:id="@+id/chapter_5_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 4 CircleView"
+        android:text="Notification"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_4_horizontal_scroll_view"
+        android:id="@+id/chapter_5_simulation_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 4 HorizontalScrollView"
+        android:text="Simulation Notification"
         android:textAllCaps="false"/>
-
 </LinearLayout>

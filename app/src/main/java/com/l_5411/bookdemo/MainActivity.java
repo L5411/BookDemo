@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.l_5411.bookdemo.chapter_2.Chapter2Activity;
 import com.l_5411.bookdemo.chapter_4.Chapter4Activity;
+import com.l_5411.bookdemo.chapter_5.Chapter5Activity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mContext = this;
     }
 
-    @OnClick({R.id.chapter_2, R.id.chapter_4})
+    @OnClick({R.id.chapter_2, R.id.chapter_4, R.id.chapter_5})
     void onClick(View v) {
         switch(v.getId()) {
             case R.id.chapter_2:
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "4");
                 startActivity(Chapter4Activity.newIntent(mContext));
                 break;
+            case R.id.chapter_5:
+                startActivity(Chapter5Activity.newIntent(mContext));
             default:
                 break;
         }
