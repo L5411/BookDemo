@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LayerDrawable" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:focusable="false"
+            android:background="@drawable/layer_edit_text"
+            android:hint="LayerDrawable Background"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StateListDrawable" />
+
+        <Button
+            android:text="Click Me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/state_list_button"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LevelListDrawable" />
+
+        <Button
+            android:id="@+id/level_list_button"
+            android:text="Click Me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/level_list_button"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TransitionDrawable" />
+
+        <Button
+            android:id="@+id/transition_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLICK ME"/>
+
+        <TextView
+            android:id="@+id/transition_text"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transition_text"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:text="Transition"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InsetDrawable" />
+
+        <ImageView
+            android:src="@drawable/icon1"
+            android:adjustViewBounds="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/inset_image"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ScaleDrawable" />
+
+        <ImageView
+            android:id="@+id/scale_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/scale_image"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/scale_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/scale_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+        </LinearLayout>
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ClipDrawable" />
+
+        <ImageView
+            android:id="@+id/clip_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/clip_image"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/clip_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+            <Button
+                android:id="@+id/clip_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CustomDrawable" />
+
+        <View
+            android:id="@+id/custom_drawable_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</ScrollView>

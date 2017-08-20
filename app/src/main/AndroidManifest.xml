@@ -24,9 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".chapter_2.Chapter2Activity" />
         <activity android:name=".chapter_4.Chapter4Activity" />
         <activity android:name=".chapter_5.Chapter5Activity" />
+        <activity android:name=".chapter_6.Chapter6Activity"/>
+
 
         <!-- chapter_2.messenger -->
         <activity android:name=".chapter_2.messenger.MessengerActivity" />
@@ -87,11 +90,13 @@
         </receiver>
 
         <!-- chapter_5.simulated_notification -->
-        <activity android:name=".chapter_5.simulated_notification.LocalActivity"
-            android:label="LocalActivity"/>
-        <activity android:name=".chapter_5.simulated_notification.RemoteActivity"
-            android:process=":remote"
-            android:label="RemoteActivity"/>
+        <activity
+            android:name=".chapter_5.simulated_notification.LocalActivity"
+            android:label="LocalActivity" />
+        <activity
+            android:name=".chapter_5.simulated_notification.RemoteActivity"
+            android:label="RemoteActivity"
+            android:process=":remote" />
     </application>
 
 </manifest>
