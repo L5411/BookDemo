@@ -6,37 +6,37 @@
     android:gravity="center">
 
     <Button
-        android:id="@+id/chapter_2"
+        android:id="@+id/chapter_7_view_animation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 2"
+        android:text="View Animation"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_4"
+        android:id="@+id/chapter_7_frame_animation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 4"
+        android:text="Frame Animation"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_5"
+        android:id="@+id/chapter_7_layout_animation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 5"
+        android:text="Layout Animation"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_6"
+        android:id="@+id/chapter_7_Activity_animation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 6"
+        android:text="Activity Animation"
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/chapter_7"
+        android:id="@+id/chapter_7_property_animation_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chapter 7"
+        android:text="Property Animation"
         android:textAllCaps="false"/>
 </LinearLayout>

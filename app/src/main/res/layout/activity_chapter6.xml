@@ -7,7 +7,7 @@
         android:orientation="vertical"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:textSize="20sp"
@@ -19,8 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:padding="1dp"
             android:inputType="text"
-            android:focusable="false"
             android:background="@drawable/layer_edit_text"
             android:hint="LayerDrawable Background"/>
 

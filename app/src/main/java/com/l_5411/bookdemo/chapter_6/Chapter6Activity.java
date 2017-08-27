@@ -10,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -64,6 +66,8 @@ public class Chapter6Activity extends AppCompatActivity {
         setContentView(R.layout.activity_chapter6);
         mContext = this;
         ButterKnife.bind(this);
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         levelListButton.setOnTouchListener(new View.OnTouchListener() {
             @Override

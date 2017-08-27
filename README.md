@@ -12,3 +12,5 @@
 * [第五章-理解 RemoteViews ](./readNotes/第五章-理解RemoteViews.md)
 
 * [第六章- Android 的 Drawable ](./readNotes/第六章-Android的Drawable.md)
+
+* [第七章- Android 动画深入分析](./readNotes/第七章-Android动画深入分析.md)
