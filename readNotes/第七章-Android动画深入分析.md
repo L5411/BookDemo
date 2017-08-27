@@ -7,10 +7,10 @@ View 动画的作用对象是 View，支持 4 种动画效果，分别是平移�
 ### 7.1.1 View 动画的种类
 | 名称 | 标签 | 子类 | 效果 |
 | --- | --- | --- | --- |
-| 平移动画 | <translate> | TranslateAnimation | 移动 View |
-| 缩放动画 | <scale> | ScaleAnimation | 放大或缩小 View |
-| 旋转动画 | <rotate> | RotateAnimation | 旋转 View |
-| 透明度动画 | <alpha> | AlphaAnimation | 改变 View 的透明度 |
+| 平移动画 | `<translate>` | TranslateAnimation | 移动 View |
+| 缩放动画 | `<scale>` | ScaleAnimation | 放大或缩小 View |
+| 旋转动画 | `<rotate>` | RotateAnimation | 旋转 View |
+| 透明度动画 | `<alpha>` | AlphaAnimation | 改变 View 的透明度 |
 
 View 动画一般使用 XML 文件定义，既可以是单个动画，以可以由一系列动画组成。`<set>` 标签表示动画集合，对应 AnimationSet 类，内部可以嵌套其他动画集合，两个属性含义如下：
 * `android:interpolator`: 表示动画集合所采用的插值器，影响动画的速度，这个属性默认为 @android:anim/accelerate_decelerate_interpolator
