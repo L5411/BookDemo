@@ -61,8 +61,10 @@ public class Chapter7Activity extends AppCompatActivity {
             case R.id.chapter_7_Activity_animation_button:
                 startActivity(TestActivity.newIntent(mContext));
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                break;
             case R.id.chapter_7_property_animation_button:
                 startActivity(PropertyActivity.newIntent(mContext));
+                break;
             default:
                 break;
         }

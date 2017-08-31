@@ -9,6 +9,7 @@
     <uses-permission android:name="com.l_5411.bookdemo.chapter_2.aidl.permission.ACCESS_BOOK_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -24,21 +25,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".chapter_2.Chapter2Activity"
-            android:label="Chapter 2"/>
-        <activity android:name=".chapter_4.Chapter4Activity"
-            android:label="Chapter 4"/>
-        <activity android:name=".chapter_5.Chapter5Activity"
-            android:label="Chapter 5"/>
-        <activity android:name=".chapter_6.Chapter6Activity"
-            android:label="Chapter 6"/>
-        <activity android:name=".chapter_7.Chapter7Activity"
-            android:label="Chapter 7"/>
+        <activity
+            android:name=".chapter_2.Chapter2Activity"
+            android:label="Chapter 2" />
+        <activity
+            android:name=".chapter_4.Chapter4Activity"
+            android:label="Chapter 4" />
+        <activity
+            android:name=".chapter_5.Chapter5Activity"
+            android:label="Chapter 5" />
+        <activity
+            android:name=".chapter_6.Chapter6Activity"
+            android:label="Chapter 6" />
+        <activity
+            android:name=".chapter_7.Chapter7Activity"
+            android:label="Chapter 7" />
 
         <!-- chapter_2.messenger -->
-        <activity android:name=".chapter_2.messenger.MessengerActivity"
-            android:label="MessengerActivity"/>
+        <activity
+            android:name=".chapter_2.messenger.MessengerActivity"
+            android:label="MessengerActivity" />
 
         <service
             android:name=".chapter_2.messenger.MessengerService"
@@ -49,8 +55,9 @@
             android:name=".chapter_2.aidl.BookManagerService"
             android:process=":remote" />
 
-        <activity android:name=".chapter_2.aidl.BookManagerActivity"
-            android:label="BookManagerActivity"/>
+        <activity
+            android:name=".chapter_2.aidl.BookManagerActivity"
+            android:label="BookManagerActivity" />
 
         <!-- chapter_2.provider -->
         <provider
@@ -59,36 +66,42 @@
             android:permission="com.l_5411.bookdemo.PROVIDER"
             android:process=":provider" />
 
-        <activity android:name=".chapter_2.provider.ProviderActivity"
-            android:label="ProviderActivity"/>
+        <activity
+            android:name=".chapter_2.provider.ProviderActivity"
+            android:label="ProviderActivity" />
 
         <!-- chapter_2.socket -->
         <service
             android:name=".chapter_2.socket.TCPServerService"
             android:process=":remote" />
 
-        <activity android:name=".chapter_2.socket.TCPClientActivity"
-            android:label="TCPClientActivity"/>
+        <activity
+            android:name=".chapter_2.socket.TCPClientActivity"
+            android:label="TCPClientActivity" />
 
         <!-- chapter_2.binder_pool -->
-        <activity android:name=".chapter_2.binder_pool.BinderPoolActivity"
-            android:label="BinderPoolActivity"/>
+        <activity
+            android:name=".chapter_2.binder_pool.BinderPoolActivity"
+            android:label="BinderPoolActivity" />
 
         <service
             android:name=".chapter_2.binder_pool.BinderPoolService"
             android:process=":remote" />
 
         <!-- chapter_4.circle_view -->
-        <activity android:name=".chapter_4.circle_view.CircleActivity"
-            android:label="CircleActivity"/>
+        <activity
+            android:name=".chapter_4.circle_view.CircleActivity"
+            android:label="CircleActivity" />
 
         <!-- chapter_4.horizontal_scroll_view -->
-        <activity android:name=".chapter_4.horizontal_scroll_view.HorizontalScrollActivity"
-            android:label="HorizontalScrollActivity"/>
+        <activity
+            android:name=".chapter_4.horizontal_scroll_view.HorizontalScrollActivity"
+            android:label="HorizontalScrollActivity" />
 
         <!-- chapter_5.notification -->
-        <activity android:name=".chapter_5.notification.NotificationActivity"
-            android:label="NotificationActivity"/>
+        <activity
+            android:name=".chapter_5.notification.NotificationActivity"
+            android:label="NotificationActivity" />
 
         <!-- chapter_5.widget_provider -->
         <receiver android:name=".chapter_5.widget_provider.MyAppWidgetProvider">
@@ -110,14 +123,16 @@
             android:name=".chapter_5.simulated_notification.RemoteActivity"
             android:label="RemoteActivity"
             android:process=":remote" />
-
-
-        <activity android:name=".chapter_7.LayoutAnimActivity"
-            android:label="LayoutAnimActivity"/>
-        <activity android:name=".chapter_7.TestActivity"
-            android:label="TestActivity"/>
-        <activity android:name=".chapter_7.property_animation.PropertyActivity"
-            android:label="PropertyActivity"/>
+        <activity
+            android:name=".chapter_7.LayoutAnimActivity"
+            android:label="LayoutAnimActivity" />
+        <activity
+            android:name=".chapter_7.TestActivity"
+            android:label="TestActivity" />
+        <activity
+            android:name=".chapter_7.property_animation.PropertyActivity"
+            android:label="PropertyActivity" />
+        <activity android:name=".chapter_8.Chapter8Activity"></activity>
     </application>
 
 </manifest>

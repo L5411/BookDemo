@@ -73,7 +73,6 @@ public class PropertyActivity extends AppCompatActivity {
                         ObjectAnimator.ofFloat(imageView, "alpha", 1, 0.25f, 1)
                 );
                 set.setDuration(5 * 1000).start();
-                ValueAnimator.AnimatorUpdateListener
                 break;
             default:
                 break;

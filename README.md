@@ -14,3 +14,5 @@
 * [第六章- Android 的 Drawable ](./readNotes/第六章-Android的Drawable.md)
 
 * [第七章- Android 动画深入分析](./readNotes/第七章-Android动画深入分析.md)
+
+* [第八章- 理解 Window 和 WindowManager](./readNotes/第八章-理解Window和WindowManager.md)
