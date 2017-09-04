@@ -41,6 +41,9 @@
             android:name=".chapter_7.Chapter7Activity"
             android:label="Chapter 7" />
 
+        <activity android:name=".chapter_8.Chapter8Activity"
+            android:label="Chapter 8"/>
+
         <!-- chapter_2.messenger -->
         <activity
             android:name=".chapter_2.messenger.MessengerActivity"
@@ -132,7 +135,7 @@
         <activity
             android:name=".chapter_7.property_animation.PropertyActivity"
             android:label="PropertyActivity" />
-        <activity android:name=".chapter_8.Chapter8Activity"></activity>
+
     </application>
 
 </manifest>
