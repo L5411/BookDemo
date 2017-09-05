@@ -18,3 +18,5 @@
 * [第八章- 理解 Window 和 WindowManager](./readNotes/第八章-理解Window和WindowManager.md)
 
 * [第九章- 四大组件的工作过程](./readNotes/第九章-四大组件的工作过程.md)
+
+* [第十章- Android 的消息机制](./readNotes/第十章-Android的消息机制.md)
