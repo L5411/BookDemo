@@ -3,7 +3,6 @@ package com.l_5411.bookdemo;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.l_5411.bookdemo.chapter_2.Chapter2Activity;
@@ -12,6 +11,7 @@ import com.l_5411.bookdemo.chapter_5.Chapter5Activity;
 import com.l_5411.bookdemo.chapter_6.Chapter6Activity;
 import com.l_5411.bookdemo.chapter_7.Chapter7Activity;
 import com.l_5411.bookdemo.chapter_8.Chapter8Activity;
+import com.l_5411.bookdemo.chapter_12.Chapter12Activity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         mContext = this;
     }
 
-    @OnClick({R.id.chapter_2, R.id.chapter_4, R.id.chapter_5, R.id.chapter_6, R.id.chapter_7, R.id.chapter_8})
+    @OnClick({R.id.chapter_2, R.id.chapter_4, R.id.chapter_5, R.id.chapter_6,
+            R.id.chapter_7, R.id.chapter_8, R.id.chapter_12})
     void onClick(View v) {
         switch(v.getId()) {
             case R.id.chapter_2:
@@ -49,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.chapter_8:
                 startActivity(Chapter8Activity.newIntent(mContext));
+                break;
+            case R.id.chapter_12:
+                startActivity(Chapter12Activity.newIntent(mContext));
                 break;
             default:
                 break;

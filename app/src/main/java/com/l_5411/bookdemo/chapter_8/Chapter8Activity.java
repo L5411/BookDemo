@@ -2,7 +2,9 @@ package com.l_5411.bookdemo.chapter_8;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.graphics.PixelFormat;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -15,6 +17,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.l_5411.bookdemo.R;
+
+import java.net.URL;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -84,4 +88,5 @@ public class Chapter8Activity extends AppCompatActivity {
         });
         getWindowManager().addView(mFloatingButton, mLayoutParams);
     }
+
 }

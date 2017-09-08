@@ -20,3 +20,7 @@
 * [第九章- 四大组件的工作过程](./readNotes/第九章-四大组件的工作过程.md)
 
 * [第十章- Android 的消息机制](./readNotes/第十章-Android的消息机制.md)
+
+* [第十一章- Android 的线程和线程池](./readNotes/第十一章-Android的线程和线程池.md)
+
+* [第十二章- Bitmap 加载和 Cache](./readNotes/第十二章-Bitmap加载和Cache.md)
